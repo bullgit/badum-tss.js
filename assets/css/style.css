@@ -34,7 +34,7 @@ h1 {
   display: block;
   cursor: pointer; }
   h1 span {
-    -webkit-animation: badum 0.9s ease 0.05s;
+    -webkit-animation: badum 0.9s ease;
     -webkit-transition: all 0.2s ease;
     display: inline-block;
     position: relative;
