@@ -1,0 +1,106 @@
+@mixin high {
+    -webkit-font-smoothing: antialiased;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-weight: 300;
+}
+
+* {
+    @include high;
+}
+
+html,body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+$c-1: #e74c3c;
+$c-2: #fff;
+html {
+    font-size: 1rem;
+    background: $c-1;
+}
+
+body {
+    font-size: 1em;
+    background: $c-1;
+    color: #fff;
+    font-family: Helvetica Neue, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Lemon", cursive;
+    font-size: 3.8em;
+    line-height: 5.5em;
+    padding-bottom:0;
+    span{
+    	-webkit-animation:badum .9s ease;
+    	display:inline-block;
+
+    }
+}
+
+.wrapper .actions {
+    width: 30%;
+    text-align: center;
+    margin:0 35%;
+    float:left;
+}
+
+footer {
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    a {
+        color: #fff;
+        padding: O 0;
+        text-decoration: none;
+        border-bottom: 1px dotted white;
+    }
+}
+
+
+
+// Red
+.button--flat {
+    text-shadow: 0 0.08em 0 rgba(black, 0.1);
+    margin-bottom: 1em;
+    a {
+        display: inline-block;
+        margin: auto 0.5em;
+        padding: 0.6em 1.2em;
+        border: 0.1em solid;
+        border-radius: 45px;
+        color: inherit;
+        text-decoration: none;
+        box-shadow: 0 0.08em 0 rgba(0, 0, 0, 0.1);
+    }
+    &.button--white {
+        a {
+            border-color: $c-2;
+            color: $c-2;
+            &:hover {
+                background: $c-2;
+                color: $c-1;
+                box-shadow:0 0 0;
+            }
+        }
+    }
+}
+
+//Animation 
+
+@-webkit-keyframes badum{
+	
+	0%{-webkit-transform:scale(0);}
+	70%{-webkit-transform:scale(1.4);}
+	75%{-webkit-transform:scale(1.25);}
+	82%{-webkit-transform:scale(.95);}
+	88%{-webkit-transform:scale(1.11);}
+	96%{-webkit-transform:scale(1);}
+}

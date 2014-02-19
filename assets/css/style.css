@@ -1,0 +1,88 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-weight: 300; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%; }
+
+html {
+  font-size: 1rem;
+  background: #e74c3c; }
+
+body {
+  font-size: 1em;
+  background: #e74c3c;
+  color: #fff;
+  font-family: Helvetica Neue, sans-serif; }
+
+h1 {
+  text-align: center;
+  font-family: "Lemon", cursive;
+  font-size: 3.8em;
+  line-height: 5.5em;
+  padding-bottom: 0; }
+  h1 span {
+    -webkit-animation: badum 0.9s ease;
+    display: inline-block; }
+
+.wrapper .actions {
+  width: 30%;
+  text-align: center;
+  margin: 0 35%;
+  float: left; }
+
+footer {
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%; }
+  footer a {
+    color: #fff;
+    padding: O 0;
+    text-decoration: none;
+    border-bottom: 1px dotted white; }
+
+.button--flat {
+  text-shadow: 0 0.08em 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 1em; }
+  .button--flat a {
+    display: inline-block;
+    margin: auto 0.5em;
+    padding: 0.6em 1.2em;
+    border: 0.1em solid;
+    border-radius: 45px;
+    color: inherit;
+    text-decoration: none;
+    box-shadow: 0 0.08em 0 rgba(0, 0, 0, 0.1); }
+  .button--flat.button--white a {
+    border-color: white;
+    color: white; }
+    .button--flat.button--white a:hover {
+      background: white;
+      color: #e74c3c;
+      box-shadow: 0 0 0; }
+
+@-webkit-keyframes badum {
+  0% {
+    -webkit-transform: scale(0); }
+
+  70% {
+    -webkit-transform: scale(1.4); }
+
+  75% {
+    -webkit-transform: scale(1.25); }
+
+  82% {
+    -webkit-transform: scale(0.95); }
+
+  88% {
+    -webkit-transform: scale(1.11); }
+
+  96% {
+    -webkit-transform: scale(1); } }
