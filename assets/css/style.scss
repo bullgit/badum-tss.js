@@ -41,7 +41,7 @@ h1 {
     display:block;
 	cursor:pointer;
     span {
-        -webkit-animation: badum 0.9s ease;
+        -webkit-animation: badum 0.9s ease .05s;
          -webkit-transition: all .2s ease;
         display: inline-block;
         position: relative;
@@ -58,7 +58,7 @@ h1 {
             margin-left: .3em;
             position: relative;
             z-index: -1;
-            -webkit-animation: appear 0.9s ease 0.15s;
+            -webkit-animation: appear 0.9s ease 0.25s;
             -webkit-transition: all .2s ease;
         }
     }
